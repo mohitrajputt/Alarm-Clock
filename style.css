@@ -1,0 +1,507 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #272727;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+/* Css for light mode */
+.light-body{
+    background-color: #eaeff1;
+}
+
+/* For Dark theme */
+
+:root{
+    --dark-shade-blue-bg-0: #26292c;
+    --dark-shade-blue-bg-1: #1b1c1d;
+    --dark-shade-blue-b: #27292d;
+    --dark-shade-blue-bg-2: #27282b;
+    --gray-shadow: #737373;
+}
+
+/* Style for Nav section-1, which container Dark-light mode button and Tools for edit and delete lock */
+
+nav{
+    display: block;
+    width: 100%;
+    height: 90px;
+}
+
+
+/* >>>>>>>>> DARK AND LIGHT MODE Button <<<<<<<<<<<<<<<<<<<<<< */
+
+.toggle-button-container{
+    box-sizing: border-box;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    top: 32px;
+    right: 62px;
+    padding: 2px;
+    border-radius: 30px;
+    border: 2px solid var(--dark-shade-blue-b);
+    background-color: var(--dark-shade-blue-bg-1);
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+/* Css for light mode */
+.light-toggle-button-container{
+    background-color: rgb(128, 128, 128,0.3);
+    border: 2px solid   white;
+    box-shadow: 0px 0px 4px 0px #3e3e3e;
+}
+
+.toggle-label:hover{
+    cursor: pointer;
+}
+
+#toggle-button{
+    display: none;
+}
+
+.toggle-label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    z-index: 100;
+}
+
+.toggle-button{
+    width: 49px;
+    height: 22px;
+    border-radius: 30px;
+    padding: 3px 0px 0px 9px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--dark-shade-blue-bg-2);
+}
+
+/* Css for light mode */
+.light-toggle-button{
+    background-color: rgb(255, 255, 255,0.5);
+    box-shadow: -1px -1px 4px gray;
+}
+
+.toggle-inner-left-divs{
+    display: inline-block;
+    width: 0;
+    height: 11px;
+    border: 1.5px solid var(--dark-shade-blue-b);
+    border-radius: 2px;
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+/* Css for light mode */
+.light-inner-left-divs{
+    border: 1.5px solid white;
+    box-shadow: 0px 0px 2px 0.5px #3e3e3e;
+}
+
+.toggle-inner-right-div{
+    display: inline-block;
+    width: 0;
+    height: 11px;
+    border: 1.7px solid white;
+    box-shadow: 0px 1px 8px 3px var(--gray-shadow);
+    border-radius: 2px;
+    position: relative;
+    left: 8px;
+}
+
+/* Css for light mode */
+.light-toggle-inner-right-div{
+    border: 1.5px solid yellow;
+    box-shadow: 0px 0px 4px 1px yellow;
+}
+
+/* ID : toggle-button actually a input box and Class : toggle-button is a whole button container */
+#toggle-button[type="checkbox"]:checked ~ .toggle-button{
+    transform: translate(42px);
+}
+
+/* <<<--- End of Dark/Light Mode button --->>> */
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>> Edit & Delete Button <<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.tools{
+    width: 100px;
+    height: 35px;
+    background-color: #323232;
+    box-shadow: 0px 0px 6px 1px #242424;
+    border-radius: 4px;
+    position: absolute;
+    top: 32px;
+    left: 62px;
+    box-sizing: border-box;
+    padding: 2px;
+}
+
+/* css for light mode */
+.light-tools{
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tools div{
+    display: inline-block;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.tools div:hover{
+    background-color: #292929;
+    cursor: pointer;
+}
+
+.light-tools div:hover{
+    background-color: lightgray;   
+}
+
+.tools div:active{
+    opacity: 0.5;
+}
+
+.add{
+    padding: 4px 0px 0px 15px;
+}
+
+.edit{
+    padding: 4px 0px 0px 15px;
+}
+
+.add-button{
+    color: white;
+}
+
+.edit-button{
+    color: white;
+}
+
+.light-add-button{
+    color: black;
+}
+
+.light-edit-button{
+    color: black;
+}
+
+/* <<<--- End of Edit/Delete button --->>> */
+
+/* >>>>>>>>>>>>>>>  Alarm clock  <<<<<<<<<<<<<<<<<< */
+
+.alarm-container{
+    width: 100%;
+    padding: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* text-shadow: 1px 4px 8px #0f0f0f; */
+}
+
+.alarm{
+    display: inline-block;
+    width: 270px;
+    height: 180px;
+    margin: 0px 12px;
+    box-sizing: border-box;
+    padding: 12px;
+    border-radius: 12px;
+    background-color: #323232;
+    box-shadow: 0px 0px 6px 1px #242424;
+    color: #737373;
+    transition: all 0.3s;
+}
+
+/* css for light mode */
+.light-alarm{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.alarm:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 3px 4px #232323;
+}
+
+.light-alarm:hover{
+    box-shadow: 0px 4px 3px 4px rgba(0, 0, 0, 0.1);
+}
+
+.delete-box{
+    display: none;
+    position: relative;
+    left: 220px;
+    z-index: 10;
+}
+
+.delete-box i{
+    position: relative;
+    z-index: -1;
+}
+
+.delete-box:hover{
+    cursor: pointer;
+}
+
+.clock-active-button{
+    width: 42px;
+    height: 18px;
+    border: 1px solid white;
+    border-radius: 12px;
+    position: relative;
+    left: 200px;
+}
+
+.light-clock-active-button{
+    border: 1px solid gray;
+}
+
+#alarm-activate{
+    display: none;
+}
+
+.clock-active-button label{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.clock-active-button label:hover{
+    cursor: pointer;
+}
+
+.clock-button-design{
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+    top: -16px;
+    left: 2px;
+    transition: all 0.3s ease-in-out;
+}
+
+.light-clock-button-design{
+    background-color: black;
+}
+
+#alarm-activate[type="checkbox"]:checked ~ .clock-button-design{
+    transform: translate(23px);
+}
+
+.clock-time{
+    position: relative;
+    top: -22px;
+}
+
+.clock-time h1{
+    display: inline;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.clock-remaining-time{
+    position: relative;
+    top: -20px;
+}
+
+.clock-remaining-time p{
+    display: inline-block;
+    margin: 0;
+    font-size: small;
+    color: #bcbcbc;
+    margin-left: 4px;
+}
+
+.light-clock-remaining-time p{
+    color: gray;
+}
+
+.clock-name{
+    font-size: 0.7rem;
+}
+
+.clock-name h1{
+    margin: 0;
+}
+
+.clock-week{
+    position: relative;
+    top: -8px;
+}
+
+.clock-week ul{
+    padding: 0 32px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clock-week li{
+    list-style: none;
+}
+
+/* <<<--- End of Alarm container  --->>> */
+
+/* Set Alarm  */
+
+.set-alarm-clock{
+    display: none;
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    width: 250px;
+    height: 280px;
+    background-color: #323232;
+    color: white;
+    padding: 12px 34px;
+}
+
+.light-set-alarm-clock{
+    background-color: #fff;
+    color: black;
+}
+
+#time,#date,#alarm-name{
+    display: block;
+    width: 230px;
+    height: 30px;
+    margin: auto;
+    color: black;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.set-alarm-clock button{
+    display: block;
+    width: 100px;
+    height: 30px;
+    margin: 22px auto;
+}
+
+.set-alarm-clock button:hover{
+    cursor: pointer;
+}
+
+.x-mark{
+    position: absolute;
+    right: 20px;
+}
+
+.x-mark:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.x-mark:active{
+    opacity: 1;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> pop-up <<<<<<<<<<<<<<<<<<<   */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: black;
+    color: white;
+    font-family: 'Black Ops One', cursive;
+    max-width: 400px;
+    /* height: 205px; */
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: inset 0px -1px 9px 0px rgb(110 110 110);
+    position: relative;
+}
+
+.popup-content p{
+    margin-top: 40px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#dismiss{
+    width: 80px;
+    height: 30px;
+    position: relative;
+    left: 310px;
+    cursor: pointer;
+    background: gray;
+    color: white;
+    border: transparent;
+    border-radius: 2px;
+}
+
+#dismiss:active{
+    opacity: 0.5;
+}
+/* >>>>>>>>>>>> real time <<<<<<<<<<<<<<<< */
+
+.clock-container {
+    font-size: 12rem;
+    color: #555555;
+    position: fixed;
+    bottom: 10%;
+    left: 25%;
+    text-shadow: -9px 8px 0px#0f0f0f;
+}
+
+@media (max-width: 900px) {
+    .clock-container {
+        font-size: 6rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .clock-container {
+        font-size: 3rem;
+    }
+}
+
+/* The End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
