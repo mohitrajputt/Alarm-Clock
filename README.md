@@ -1,7 +1,7 @@
 # Alarm-Clock
 Click to use -> https://mohitrajputt.github.io/Alarm-Clock/  <br>
 
-# I have four features <br>
+# It have four features <br>
 1. <b> Clock face: <b/> Show Real time [ at the bottom of the page ] <br>
 2. <b> Set Alarm: <b/> When you Click on Set Alarm container it will show you set alarm where you can set time and date and here two buttons one to cancel and second for save. <br>
 When you set the alarm, alarm container show the set time and remaining time  and name of alarm. <br>
