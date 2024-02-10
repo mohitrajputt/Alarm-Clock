@@ -11,3 +11,9 @@ Popup Alert :  It's play ringtune and show alert message. <br>
 Note: 1. ADD actually add the copy of first container so if you use multiple alarm so first create alarm from intial alarm than make copy and modifie original. <br>
 Note: 2. Delete from End of right side. <br>
 4.  Light/Dark Mode :  It have to ui mode dark and light, you can click and switch it [ i prefer to use dark ].  
+
+ <br> <br> <br>
+ Screenshots <br>
+ ![alarmclock ss1](https://github.com/mohitrajputt/Alarm-Clock/blob/915f1723419243dfe80fd4d5da4419f791f50507/Screenshot%20(52).png)
+ ![alarmclock ss2](https://github.com/mohitrajputt/Alarm-Clock/blob/915f1723419243dfe80fd4d5da4419f791f50507/Screenshot%20(53).png)
+ ![alarmclock ss3](https://github.com/mohitrajputt/Alarm-Clock/blob/915f1723419243dfe80fd4d5da4419f791f50507/Screenshot%20(54).png)
