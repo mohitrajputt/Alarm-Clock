@@ -1,19 +1,41 @@
-# Alarm-Clock
-Click to use -> https://mohitrajputt.github.io/Alarm-Clock/  <br>
+# Clock Alarm Webpage
 
-# It have four features <br>
-<b> 
-1. Clock face:  Show Real time [ at the bottom of the page ] <br>
-2.  Set Alarm:  When you Click on Set Alarm container it will show you set alarm where you can set time and date and here two buttons one to cancel and second for save. <br>
-When you set the alarm, alarm container show the set time and remaining time  and name of alarm. <br>
-Popup Alert :  It's play ringtune and show alert message. <br>
-3. tools : ADD & Edit , Add to creare a clone for initial alarm container and edit for delete alarm container. <br>
-Note: 1. ADD actually add the copy of first container so if you use multiple alarm so first create alarm from intial alarm than make copy and modifie original. <br>
-Note: 2. Delete from End of right side. <br>
-4.  Light/Dark Mode :  It have to ui mode dark and light, you can click and switch it [ i prefer to use dark ].  
+This is a simple clock alarm webpage developed using only vanilla JavaScript. It provides several functionalities including displaying real-time clock face, setting alarms, managing alarm containers, and switching between light and dark mode.
 
- <br> <br> <br>
- Screenshots <br>
- ![alarmclock ss1](https://github.com/mohitrajputt/Alarm-Clock/blob/915f1723419243dfe80fd4d5da4419f791f50507/Screenshot%20(52).png)
- ![alarmclock ss2](https://github.com/mohitrajputt/Alarm-Clock/blob/915f1723419243dfe80fd4d5da4419f791f50507/Screenshot%20(53).png)
- ![alarmclock ss3](https://github.com/mohitrajputt/Alarm-Clock/blob/915f1723419243dfe80fd4d5da4419f791f50507/Screenshot%20(54).png)
+## Features
+
+- **Clock Face**: Shows real-time clock at the bottom of the page.
+- **Set Alarm**: Clicking on the "Set Alarm" container allows you to set time and date for the alarm. You can then save or cancel the alarm. Once set, the alarm container displays the set time, remaining time, and name of the alarm. When the alarm goes off, a popup alert with a ringtone and message is displayed.
+- **Tools**: Add : Add creates a clone of the initial alarm container. It's recommended to create the initial alarm first and then make copies to modify the original.
+- Delete: Deletes the alarm container from the right side.
+- **Light/Dark Mode** You can switch between light and dark mode by clicking on the UI mode button.
+
+## Demo
+
+![Demo GIF](https://github.com/mohitrajputt/Alarm-Clock/blob/5fdf3e9e9e999ad68dc781540a3a3c86d58475e7/demo.gif)
+
+[Live Demo](#) - (https://mohitrajputt.github.io/Alarm-Clock/)
+
+## Instructions
+
+1. Clone this repository to your local machine.
+2. Open the index.html file in a web browser.
+3. Enjoy the functionalities of the clock alarm webpage!
+
+## Usage
+
+* Click on "Set Alarm" to set a new alarm.
+* Use the tools to add, edit, or delete alarm containers.
+* Switch between light and dark mode by clicking on the UI mode button.
+
+## Dependencies
+
+No external libraries or frameworks are used. The webpage is built using only vanilla JavaScript, HTML, and CSS.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For any questions or feedback, (mailto: 999mohitrajput@gmail.com).
