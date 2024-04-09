@@ -1,3 +1,4 @@
+console.log("desktop first web application");
 // <--------------- To convert Dark mode -> Light mode ---------------------->
 
 var toggle_button = document.getElementsByClassName('toggle-label')[0];
